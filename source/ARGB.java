@@ -1,4 +1,6 @@
+
 public class ARGB {
+
     public int alpha, red, green, blue;
 
     public ARGB(int pixel) {
