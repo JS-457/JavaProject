@@ -1,8 +1,10 @@
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.imageio.ImageIO;
 
 public abstract class Converter {
+
     private int imageWidth, imageHeight;
 
     public void convert(String inputFileName, String outputFileName) throws java.io.IOException {
@@ -32,7 +34,6 @@ public abstract class Converter {
     // - setRGB(int x, int y, int rgb)
     // - getWidth()
     // - getHeight()
-    
     // Dedicated for subclasses to process the image
     protected abstract void processImage(java.awt.image.BufferedImage inputImage, java.awt.image.BufferedImage outputImage);
 
@@ -43,7 +44,7 @@ public abstract class Converter {
     public int getHeight() {
         return imageHeight;
     }
-   
+
     // Read the documentation of the ImageIO class at
     // https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/imageio/package-summary.html
     // Specifically, pay attention to the following methods:
