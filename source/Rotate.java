@@ -15,7 +15,7 @@ public class Rotate extends Converter {
                 int rotX = height - 1 - x;
                 int rotY = x;
 
-                // Output image now has the new XY coordinates and pixel values.
+                // Output image now has the new X/Y coordinates and pixel values.
                 outputImage.setRGB(rotX, rotY, pixel);
             }
         }
